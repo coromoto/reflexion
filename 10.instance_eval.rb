@@ -16,10 +16,10 @@ p k.instance_eval {@secret}
 k.instance_eval "def a_singlenton_method; p self; %q{hello}; end"
 p k.a_singlenton_method
 
-Demo.instance_eval {
+Demo.instance_eval do
   def a_class_method
     self
   end
-}
+end
 
 p Demo.a_class_method

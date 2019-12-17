@@ -15,14 +15,13 @@ p UnaClase < ModuloExterno
 p ModuloExterno < ModuloIncluido
 p UnaClase < ModuloIncluido
 
-p Fixnum  < Integer
+p Integer < Numeric
 p Integer < Comparable
-p Integer < Fixnum
 
 p ModuloIncluido.ancestors  
 p ModuloExterno.ancestors
 p UnaClase.ancestors
-p Fixnum.ancestors
+p Integer.ancestors
 
 p UnaClase.include? ModuloExterno
 p UnaClase.include? ModuloIncluido
